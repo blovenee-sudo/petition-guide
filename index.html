@@ -348,12 +348,50 @@
     border-top: 1.5px solid var(--border);
   }
 
-  @media (max-width: 480px) {
-    body { font-size: 20px; }
-    .step { gap: 0 16px; }
-    .step-num { width: 48px; height: 48px; font-size: 22px; }
-    .petition-btn { font-size: 21px; padding: 20px 24px; }
+  /* ── 모바일 우선 반응형 ── */
+  @media (max-width: 640px) {
+    body { font-size: 24px; }
+
+    .page { padding: 0 16px 60px; }
+
+    .hero { padding: 36px 0 32px; }
+    .hero h1 { font-size: 40px; }
+    .hero-sub { font-size: 22px; }
+    .hero-eyebrow { font-size: 16px; }
+
+    .petition-btn {
+      font-size: 26px;
+      padding: 24px 20px;
+      border-radius: 14px;
+    }
+    .btn-hint { font-size: 19px; }
+
     .qr-section { padding: 32px 20px; }
+    .qr-img { width: min(220px, 55vw); }
+    .qr-label { font-size: 20px; }
+    .qr-desc { font-size: 21px; }
+
+    .section-title { font-size: 30px; }
+    .section-desc { font-size: 21px; }
+    .section-eyebrow { font-size: 15px; }
+
+    .video-wrap { max-width: 100%; }
+
+    .step { gap: 0 14px; }
+    .step-num {
+      width: 52px; height: 52px;
+      font-size: 26px;
+    }
+    .step-title { font-size: 26px; }
+    .step-desc { font-size: 22px; }
+    .step-tip { font-size: 20px; padding: 14px 14px; }
+    .step-img-wrap { max-width: 100%; }
+
+    .done-title { font-size: 30px; }
+    .done-desc { font-size: 22px; }
+    .done-img-wrap { max-width: 100%; }
+
+    .footer { font-size: 17px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
